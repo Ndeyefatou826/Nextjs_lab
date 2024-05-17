@@ -10,15 +10,15 @@ function MovieList() {
         <div>
             <h1>Movie List</h1>
             <ul>
-                {movies.map((movie) => { // Add closing parenthesis ')' here
+                {movies.map( movie => {
                         return (
                         <li key={movie.id}>
-                                {movie.title} - {movie.releaseYear}
+                            {movie.title} - {movie.releaseYear}
                         </li>
-                );
-        })}
-        </ul>
-</div>
-);
+                        );
+                })}
+            </ul>
+        </div>
+    );
 }
 export default MovieList;
