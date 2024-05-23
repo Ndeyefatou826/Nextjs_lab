@@ -9,16 +9,25 @@ function MovieList() {
     return (
         <div>
             <h1>Movie List</h1>
-            <ul>
-                {movies.map( movie => {
-                        return (
-                        <li key={movie.id}>
-                            {movie.title} - {movie.releaseYear}
-                        </li>
-                        );
+            <table>
+                <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Release Year</th>
+                </tr>
+                </thead>
+                <tbody>
+                {movies.map(movie => {
+                    return (
+                    <tr key={movie.id}>
+                        <td>{movie.title}</td>
+                        <td>{movie.releaseYear}</td>
+                    </tr>
+                    );
                 })}
-            </ul>
-        </div>
+                </tbody>
+            </table>
+            </div>
     );
 }
 export default MovieList;

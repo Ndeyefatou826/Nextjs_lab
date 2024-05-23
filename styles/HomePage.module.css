@@ -1,0 +1,14 @@
+.btn-about {
+    background-color: #ff0000; /* Red */
+    color: white;
+  }
+  
+  .btn-movies {
+    background-color: #00ff00; /* Green */
+    color: white;
+  }
+  
+  .btn-product {
+    background-color: #0000ff; /* Blue */
+    color: white;
+  }
